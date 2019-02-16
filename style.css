@@ -8,13 +8,55 @@ body{
 }
 h1{
     font-family: 'Rozha One', serif;
-    font-size: 80pt;
+    font-size: 100pt;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    width: 500px;
+    overflow: hidden;
+    -webkit-animation: fadein 4s 2s backwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s 2s backwards; /* Firefox < 16 */
+     -ms-animation: fadein 4s 2s backwards; /* Internet Explorer */
+      -o-animation: fadein 4s 2s backwards; /* Opera < 12.1 */
+         animation: fadein 4s 2s backwards;
+    }
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
 }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
 /* navigation */
 nav{
     position: fixed;
     top: 30px;
-    right: 100px;
+    right: 50px;
+    -webkit-animation: fadein 2s 4s backwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s 4s backwards; /* Firefox < 16 */
+    -ms-animation: fadein 2s 4s backwards; /* Internet Explorer */
+    -o-animation: fadein 2s 4s backwards; /* Opera < 12.1 */
+    animation: fadein 2s 4s backwards;
 }
 nav ol{
     list-style-type: none;
@@ -31,4 +73,42 @@ nav ol li{
 
 nav ol li:hover{
     font-weight: bold;
+    color: #F20142;
+}
+
+/* Art article */
+article#body{
+    margin: 85px 10% 0 10% ;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 700px; 
+    max-width: 100%;
+    width: auto;
+}
+div.artInfo{
+    position: relative;
+    display: block;
+    top: -80px;
+    left: -101%;
+    -webkit-animation: fadein 2s 5s backwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s 5s backwards; /* Firefox < 16 */
+    -ms-animation: fadein 2s 5s backwards; /* Internet Explorer */
+    -o-animation: fadein 2s 5s backwards; /* Opera < 12.1 */
+    animation: fadein 2s 5s backwards;
+         
+}
+div.artInfo p{
+    display: block;
+    text-align: right;
+    margin: 0;
+}
+p.size{
+    color: #767575;
+    font-size: 12pt;
+}
+p.medium{
+    color: #767575;
 }
