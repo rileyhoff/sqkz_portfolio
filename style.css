@@ -2,3 +2,33 @@
 SQKZ Portfolio 
 created by: Riley Hoff
  */
+body{
+    margin: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Rozha One', serif;
+    font-size: 80pt;
+}
+/* navigation */
+nav{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+nav ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+}
+nav ol li{
+    padding: 10px;
+    text-align: right;
+    display: block;
+    width: 120px;
+}
+
+nav ol li:hover{
+    font-weight: bold;
+}
