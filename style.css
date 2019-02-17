@@ -5,23 +5,26 @@ created by: Riley Hoff
 body{
     margin: 5%;
     font-family: 'Raleway', sans-serif;
+    background-color: #E1E1E1;
 }
 h1{
     font-family: 'Rozha One', serif;
-    font-size: 100pt;
+    font-size: 15vw;
     position: fixed;
-    top: -20px;
+    top: -5vh;
+    left: 1vw;
     padding: 0;
     margin: 0;
+    color: #F20142;
     z-index: 100;
-    width: 500px;
+    width: 40vw;
     overflow: hidden;
     -webkit-animation: fadein 4s 2s backwards; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s 2s backwards; /* Firefox < 16 */
      -ms-animation: fadein 4s 2s backwards; /* Internet Explorer */
       -o-animation: fadein 4s 2s backwards; /* Opera < 12.1 */
          animation: fadein 4s 2s backwards;
-    transition: all 0.3s;
+    transition: all 2s;
     }
     .horzontalTitle{
         writing-mode: horizontal-tb;
@@ -29,10 +32,12 @@ h1{
     .verticalTitle{
         writing-mode: vertical-lr;
         text-orientation: upright;
+        font-size: 20vh;
+        top:-1vh; 
         padding: 0; 
         margin: 0; 
+        color:#D1D1D1;
         z-index: -100;
-        color:#D1D1D1;     
     }
 
 @keyframes fadein {
@@ -103,6 +108,11 @@ img{
     max-height: 700px; 
     max-width: 100%;
     width: auto;
+    -webkit-animation: fadein 2s backwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s backwards; /* Firefox < 16 */
+    -ms-animation: fadein 2s backwards; /* Internet Explorer */
+    -o-animation: fadein 2s backwards; /* Opera < 12.1 */
+    animation: fadein 2s backwards;
 }
 div.artInfo{
     position: relative;
@@ -121,10 +131,28 @@ div.artInfo p{
     text-align: right;
     margin: 0;
 }
+div.artInfo p.title{
+    font-weight: bold;  
+}
 p.size{
     color: #767575;
     font-size: 12pt;
 }
 p.medium{
     color: #767575;
+}
+/* footer */
+div.vl{
+    height: 10vh;
+    border-left: 3px solid #F20142;
+    position: fixed;
+    bottom: 0;
+    right: 4vw;
+}
+img#insta{
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 2vh;
+    right: 4.5vw;
 }
