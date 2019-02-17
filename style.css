@@ -10,7 +10,7 @@ h1{
     font-family: 'Rozha One', serif;
     font-size: 100pt;
     position: fixed;
-    top: 0;
+    top: -20px;
     padding: 0;
     margin: 0;
     z-index: 100;
@@ -21,6 +21,18 @@ h1{
      -ms-animation: fadein 4s 2s backwards; /* Internet Explorer */
       -o-animation: fadein 4s 2s backwards; /* Opera < 12.1 */
          animation: fadein 4s 2s backwards;
+    transition: all 0.3s;
+    }
+    .horzontalTitle{
+        writing-mode: horizontal-tb;
+    }
+    .verticalTitle{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        padding: 0; 
+        margin: 0; 
+        z-index: -100;
+        color:#D1D1D1;     
     }
 
 @keyframes fadein {
@@ -50,7 +62,7 @@ to   { opacity: 1; }
 /* navigation */
 nav{
     position: fixed;
-    top: 30px;
+    top: 50px;
     right: 50px;
     -webkit-animation: fadein 2s 4s backwards; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s 4s backwards; /* Firefox < 16 */
@@ -70,6 +82,10 @@ nav ol li{
     display: block;
     width: 120px;
 }
+ nav a{
+     color: black;
+     text-decoration: none;
+ }
 
 nav ol li:hover{
     font-weight: bold;
