@@ -68,7 +68,9 @@ to   { opacity: 1; }
 nav{
     position: fixed;
     top: 50px;
-    right: 50px;
+    right: 30px;
+    border-right: 3px solid #F20142;
+    padding-right:30px; 
     -webkit-animation: fadein 2s 4s backwards; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s 4s backwards; /* Firefox < 16 */
     -ms-animation: fadein 2s 4s backwards; /* Internet Explorer */
@@ -105,7 +107,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 700px; 
+    max-height: 85vh; 
     max-width: 100%;
     width: auto;
     -webkit-animation: fadein 2s backwards; /* Safari, Chrome and Opera > 12.1 */
@@ -142,17 +144,24 @@ p.medium{
     color: #767575;
 }
 /* footer */
+footer{
+    -webkit-animation: fadein 2s 6s backwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s  6s backwards; /* Firefox < 16 */
+     -ms-animation: fadein 2s 6s backwards; /* Internet Explorer */
+       -o-animation: fadein 2s 6s backwards; /* Opera < 12.1 */
+         animation: fadein 2s 6s backwards;
+}
 div.vl{
     height: 10vh;
     border-left: 3px solid #F20142;
     position: fixed;
     bottom: 0;
-    right: 4vw;
+    right: 5vw;
 }
 img#insta{
     width: 25px;
     height: 25px;
     position: fixed;
     bottom: 2vh;
-    right: 4.5vw;
+    right: 5.5vw;
 }
