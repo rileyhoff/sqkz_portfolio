@@ -41,12 +41,17 @@ if ($file) {
     <h1 id="sqkzTitle">SQKZ</h1>
     <nav>
         <ol>
-            <li><a href="index.html"> Selcected Works</a></li>
+            <li><a href="index.php">Selcected Works</a></li>
             <li>Painting</li> <!-- can sort by years if want to separate -->
             <li>Drawing</li>
-            <li>About Me</li>
-            <!-- Instagram -->
-        </ol>   
+            <li><a href="aboutMe.php">About Me</a></li>
+        </ol>
+        <div id="lowerNav">  
+            <div class="vl"></div>
+            <a href="https://www.instagram.com/sqkz_/" target="_blank">
+                <img src="images/instaIcon.png" alt="instagram" id="insta">
+            </a> 
+        </div>
     </nav>
     <article id="body">
         <?php
@@ -66,10 +71,8 @@ if ($file) {
         ?>
     </article>
     <footer>
-        <div class="vl"></div>
-        <a href="https://www.instagram.com/sqkz_/" target="_blank">
-        <img src="images/instaIcon.png" alt="instagram" id="insta">
-        </a>
+        <p>Contact: rhoff@uvm.edu</p>
+        <p>Author: Riley Hoff</p>
     </footer>
 </body>
 <script>

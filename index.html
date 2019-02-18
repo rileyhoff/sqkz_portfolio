@@ -11,6 +11,11 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
     <script src="script.js"></script>
+    
+    
+  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="jquery-csv-master/src/jquery.csv.js"></script>
 
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -56,8 +61,10 @@
             </div>
         </article>
 
-
     </article>
+
+    <p id="test"></p>
+
     <footer>
         <div class="vl"></div>
         <a href="https://www.instagram.com/sqkz_/" target="_blank">
@@ -73,6 +80,12 @@
     var title = document.getElementById("sqkzTitle");
     var endOfDocumentTop = 100;
     var size = 0;
+
+    
+    //read artwork data into file
+    var artworks = $.csv.toArray("data/artworks.csv");
+    document.getElementById("test").innerHTML = artworks;
+    
 
 </script>
 </html>
