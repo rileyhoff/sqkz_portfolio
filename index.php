@@ -44,7 +44,7 @@ if ($file) {
     <?php 
     include 'nav.php'
     ?>
-    <article id="body">
+    <article id="bodyVertical">
         <?php
         //print each artwork and info
         foreach($artworks as $artwork){
