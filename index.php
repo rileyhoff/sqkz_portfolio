@@ -31,6 +31,7 @@ if ($file) {
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="swup/dist/swup.js"></script>
 
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -38,13 +39,14 @@ if ($file) {
 </head>
 
 <body>
-    <h1 id="sqkzTitle">SQKZ</h1>
+    <main id="swup" class="transition-fade">
+    <h1 id="sqkzTitle" class="horizontalTitle">SQKZ</h1>
     <nav>
         <ol>
-            <li><a href="index.php">Selcected Works</a></li>
+            <li><a href="/sqkz/portfolio_develop/index.php">Selcected Works</a></li>
             <li>Painting</li> <!-- can sort by years if want to separate -->
             <li>Drawing</li>
-            <li><a href="aboutMe.php">About Me</a></li>
+            <li><a href="/sqkz/portfolio_develop/aboutMe.php">About Me</a></li>
         </ol>
         <div id="lowerNav">  
             <div class="vl"></div>
@@ -71,18 +73,20 @@ if ($file) {
         ?>
     </article>
     <footer>
-        <p>Contact: rhoff@uvm.edu</p>
+        <p>Contact: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu</a></p>
         <p>Author: Riley Hoff</p>
     </footer>
+    </main>
+    <div class="transition-swipe overlay"></div>
 </body>
 <script>
+    //swup page transitions
+    const swup = new Swup();
+
     //onscroll change sqkz header to vertical text
     window.onscroll = function () {
         verticalTitle()
     };
-    var title = document.getElementById("sqkzTitle");
-    var endOfDocumentTop = 100;
-    var size = 0;
- 
+
 </script>
 </html>

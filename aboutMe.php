@@ -19,28 +19,25 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="altPage">
+<main id="swup" class="transition-fade">
     <h1 id="sqkzTitle" class="verticalTitle">SQKZ</h1>
     <nav>
         <ol>
-            <li><a href="index.php"> Selcected Works</a></li>
+            <li><a href="/sqkz/portfolio_develop/index.php">Selcected Works</a></li>
             <li>Painting</li> <!-- can sort by years if want to separate -->
             <li>Drawing</li>
-            <li>About Me</li>
+            <li><a href="/sqkz/portfolio_develop/aboutMe.php">About Me</a></li>
         </ol>
-        <div id="lowerNav">  
-            <div class="vl"></div>
-            <a href="https://www.instagram.com/sqkz_/" target="_blank">
-                <img src="images/instaIcon.png" alt="instagram" id="insta">
-            </a> 
-        </div>
     </nav>
     <article id="body">
-       
+       <h2>About Me</h2>
+       <p>Im a 22 year old studing Studio Art and Computer Science at the University of Vermont. <br>
+        - SQKZ (Riley Hoff)<br><br>
+        Contact me: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu<a><br>
+        insta : <a href="https://www.instagram.com/sqkz_/" target="_blank">@sqkz_</a></p>
     </article>
-    <footer>
-        <p>Contact: rhoff@uvm.edu</p>
-        <p>Author: Riley Hoff</p>
-    </footer>
+</main>
+<div class="transition-swipe overlay"></div>
 </body>
 </html>
