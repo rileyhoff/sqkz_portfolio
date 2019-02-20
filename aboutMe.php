@@ -22,14 +22,9 @@
 <body class="altPage">
 <main id="swup" class="transition-fade">
     <h1 id="sqkzTitle" class="verticalTitle">SQKZ</h1>
-    <nav>
-        <ol>
-            <li><a href="/sqkz/portfolio_develop/index.php">Selcected Works</a></li>
-            <li>Painting</li> <!-- can sort by years if want to separate -->
-            <li>Drawing</li>
-            <li><a href="/sqkz/portfolio_develop/aboutMe.php">About Me</a></li>
-        </ol>
-    </nav>
+    <?php
+    include 'nav.php';
+    ?>
     <article id="body">
        <h2>About Me</h2>
        <p>Im a 22 year old studing Studio Art and Computer Science at the University of Vermont. <br>
