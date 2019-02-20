@@ -48,7 +48,7 @@ if ($file) {
         <?php
         //print each artwork and info
         foreach($artworks as $artwork){
-            if(!($artwork == "")){
+            if(!($artwork == "")&&($artwork[4] == "s")){
             print '<article class="art">';
             print '<img src="images/'.$artwork[0].'" alt="'.$artwork[0].'">';
             print '<div class="artInfo">';
