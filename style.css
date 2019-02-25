@@ -7,6 +7,7 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #E1E1E1;
 }
+
 h1{
     font-family: 'Rozha One', serif;
     font-size: 15vw;
@@ -101,8 +102,6 @@ nav ol li:visited{
     font-weight: bold;
     color: #954242;
 }
-
-
 div#lowerNav div.vl{
     height: 10vh;
     border-left: 3px solid #954242;
@@ -126,6 +125,7 @@ div#lowerNav img#insta{
 }
 
 /* Art article */
+
 article#bodyVertical{
     margin: 85px 10% 0 10% ;
 }
@@ -169,18 +169,28 @@ p.size{
 p.medium{
     color: #7A7A7A;
 }
-/* grid page */
+/* grid body  */
+
 article#bodyGrid{
     margin: 85px 2% 0 2% ;
+    overflow: auto;
 }
 article#bodyGrid article.art{
     float: left;
     width: 25vw;
+    height: 25vw;
     padding: .5vw;
+    overflow: hidden;
+}
+article#bodyGrid article.art img{
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
 }
 article#bodyGrid div.artInfo{
     display: none;         
 }
+
 /* footer */
 footer{
     position: absolute;
@@ -195,7 +205,18 @@ footer p{
     margin: 20px 0px 0px 10vw;
 }
 /* painting page */
+
 body#painting h1#sqkzTitle.horzontalTitle{  /*override horizontal if necescary*/
+    writing-mode: vertical-lr;
+    font-size: 20vh;
+    top:-1vh; 
+    padding: 0; 
+    margin: 0; 
+    z-index: -100;
+}
+/* drawing page */
+
+body#drawing h1#sqkzTitle.horzontalTitle{  /*override horizontal if necescary*/
     writing-mode: vertical-lr;
     font-size: 20vh;
     top:-1vh; 
@@ -205,6 +226,7 @@ body#painting h1#sqkzTitle.horzontalTitle{  /*override horizontal if necescary*/
 }
 
 /* alternate page */
+
 body.altPage{
     background-color: #954242;
     color: #E1E1E1;

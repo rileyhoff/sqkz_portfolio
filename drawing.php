@@ -1,4 +1,22 @@
 <?php
+//open artworks csv file and put into array
+$myFileName = "data/artworks";
+$fileExt = ".csv";
+$filename = $myFileName . $fileExt;
+$file = fopen($filename, "r");
+
+/* the variable $file will be empty or false if the file does not open */
+if ($file) {
+    /* Tread the first row of headers */
+    $headers = fgetcsv($file);
+    
+    while (!feof($file)) {
+        $artworks[] = fgetcsv($file);
+    }
+    //closes the file
+    fclose($file);
+
+} // ends if file was opened
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +37,28 @@
 <![endif]-->
 </head>
 
-<body class="altPage">
+<body class="drawing">
 <main id="swup" class="transition-fade">
     <h1 id="sqkzTitle" class="verticalTitle">SQKZ</h1>
     <?php
     include 'nav.php';
     ?>
-    <article id="body">
-       <h2>Drawing.</h2>
-       <p>~Coming soon~</p>
+    <article id="bodyGrid">
+        <?php
+        //print each artwork and info
+        foreach($artworks as $artwork){
+            if(!($artwork == "")&& $artwork[4]=="d"){
+            print '<article class="art">';
+            print '<img src="images/'.$artwork[0].'" alt="'.$artwork[0].'">';
+            print '<div class="artInfo">';
+                print '<p class="title">'.$artwork[1].'</p>';
+                print '<p class="medium">'.$artwork[2].'</p>';
+                print '<p class="size">'.$artwork[3].'</p>';
+            print '</div>';
+        print '</article>';
+        } 
+    }
+        ?>
     </article>
 </main>
 <div class="transition-swipe overlay"></div>
