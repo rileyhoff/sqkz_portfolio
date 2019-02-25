@@ -67,19 +67,27 @@ if ($file) {
     </footer>
     </main>
     <div class="transition-swipe overlay"></div>
-</body>
 <script>
     //swup page transitions
     const swup = new Swup();
 
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    
+    document.addEventListener('swup:contentReplaced', event => {
+    path = window.location.pathname;
+    page = path.split("/").pop();
+    console.log("Current Page:", page );
+    });
+
     //onscroll change sqkz header to vertical text
     window.onscroll = function () {
-    if(window.location.pathname == "/sqkz/portfolio_develop/index.php"){
+    if(page == "index.php"){
         verticalTitle();
     }else{
-
+        //do nothing
     }
     }; 
-
 </script>
+</body>
 </html>
