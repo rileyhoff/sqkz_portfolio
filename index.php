@@ -1,23 +1,6 @@
 <?php
-//open artworks csv file and put into array
-$myFileName = "data/artworks";
-$fileExt = ".csv";
-$filename = $myFileName . $fileExt;
-$file = fopen($filename, "r");
-
-/* the variable $file will be empty or false if the file does not open */
-if ($file) {
-    /* Tread the first row of headers */
-    $headers = fgetcsv($file);
-    
-    while (!feof($file)) {
-        $artworks[] = fgetcsv($file);
-    }
-    //closes the file
-    fclose($file);
-
-} // ends if file was opened
-?>
+include 'readCsv.php
+'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +9,7 @@ if ($file) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Riley Hoff">
-    <meta name="description" content="SQKZ (RIley Hoff) art portfolio">
+    <meta name="description" content="SQKZ (Riley Hoff) art portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
@@ -67,27 +50,29 @@ if ($file) {
     </footer>
     </main>
     <div class="transition-swipe overlay"></div>
-<script>
-    //swup page transitions
-    const swup = new Swup();
+    <script>
+        //swup page transitions
+        const swup = new Swup();
 
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-    
-    document.addEventListener('swup:contentReplaced', event => {
-    path = window.location.pathname;
-    page = path.split("/").pop();
-    console.log("Current Page:", page );
-    });
+        //get page title on startup
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        
+        //get new page tile after content replaced
+        document.addEventListener('swup:contentReplaced', event => {
+            path = window.location.pathname;
+            page = path.split("/").pop();
+            console.log("Current Page:", page );
+        });
 
-    //onscroll change sqkz header to vertical text
-    window.onscroll = function () {
-    if(page == "index.php"){
-        verticalTitle();
-    }else{
-        //do nothing
-    }
-    }; 
-</script>
+        //onscroll change sqkz header to vertical text
+        window.onscroll = function () {
+            if(page == "index.php"){
+                verticalTitle();
+            }else{
+                //do nothing
+            }
+        }; 
+    </script>
 </body>
 </html>
