@@ -1,6 +1,6 @@
 <?php
-include 'readCsv.php
-'?>
+include 'readCsv.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,7 @@ include 'readCsv.php
 </head>
 
 <body>
-    <main id="swup" class="transition-fade">
+    <main id="swup" class="transition-swipe">
     <h1 id="sqkzTitle" class="horizontalTitle">SQKZ</h1>
     <?php 
     include 'nav.php'
