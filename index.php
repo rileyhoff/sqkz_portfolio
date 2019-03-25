@@ -13,6 +13,7 @@ include 'readCsv.php'
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
+    <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>
 
@@ -22,7 +23,7 @@ include 'readCsv.php'
 </head>
 
 <body>
-    <main id="swup" class="transition-swipe">
+    <main id="swup" class="transition-fade">
     <h1 id="sqkzTitle" class="horizontalTitle">SQKZ</h1>
     <?php 
     include 'nav.php'
@@ -70,7 +71,7 @@ include 'readCsv.php'
             if(page == "index.php"){
                 verticalTitle();
             }else{
-                //do nothing
+                //dont change title
             }
         }; 
     </script>

@@ -201,7 +201,7 @@ article#bodyGrid div.artInfo{
     display: none;
     position: fixed;
     max-height: 95vh; 
-    max-width: 100%;
+    max-width: 80vw;
     width: auto;
     top: 50%;
     left: 50%;

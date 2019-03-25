@@ -13,7 +13,9 @@ include 'readCsv.php'
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
+    <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
+    <script src="swup/dist/swup.js"></script>
 
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -21,7 +23,7 @@ include 'readCsv.php'
 </head>
 
 <body class="drawing">
-<main id="swup" class="transition-swipe">
+<main id="swup" class="transition-fade">
     <h1 id="sqkzTitle" class="verticalTitle">SQKZ</h1>
     <?php
     include 'nav.php';
@@ -48,7 +50,32 @@ include 'readCsv.php'
         <div id="fullViewOverlay" onclick="fullViewExit()"></div>
         <button id="exitBtn" onclick="fullViewExit()">X</button>
     </div>
+    <!-- could try  to print an accending id in artworks, then access src from js to allow for arrow keys (next image)-->
 </main>
 <div class="transition-swipe overlay"></div>
+<script>
+        //swup page transitions
+        const swup = new Swup();
+
+        //get page title on startup
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        
+        //get new page tile after content replaced
+        document.addEventListener('swup:contentReplaced', event => {
+            path = window.location.pathname;
+            page = path.split("/").pop();
+            console.log("Current Page:", page );
+        });
+
+        //onscroll change sqkz header to vertical text
+        window.onscroll = function () {
+            if(page == "index.php"){
+                verticalTitle();
+            }else{
+                //dont change title
+            }
+        }; 
+    </script>
 </body>
 </html>
