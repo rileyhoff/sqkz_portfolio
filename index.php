@@ -38,7 +38,7 @@ include 'readCsv.php'
         foreach($artworks as $artwork){
             if(!($artwork == "")&&($artwork[4] =="s")){
             print '<article class="art">';
-            print '<img src="images/'.$artwork[0].'" id ="'.$artwork[1].'" alt="'.$artwork[0].'">';
+            print '<img src="images/'.$artwork[0].'" id ="'.$artwork[1].'" alt="'.$artwork[0].'"onclick="fullViewDir(this)">';
             print '<div class="artInfo" id ="'.$artwork[0].'Info"><script>placeArtInfo("'.$artwork[1].'");</script>';
                 print '<p class="title">'.$artwork[1].'</p>';
                 print '<p class="medium">'.$artwork[2].'</p>';
@@ -57,6 +57,11 @@ include 'readCsv.php'
         <p>Contact: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu</a></p>
         <p>Author: Riley Hoff</p>
     </footer>
+    <div id="fullView" >
+        <img id="fullViewImg" src="">
+        <div id="fullViewOverlay" onclick="fullViewExit()"></div>
+        <button id="exitBtn" onclick="fullViewExit()">X</button>
+    </div>
     </main>
     <div class="transition-swipe overlay"></div>
     <script>
