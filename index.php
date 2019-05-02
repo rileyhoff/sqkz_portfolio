@@ -16,7 +16,11 @@ include 'readCsv.php'
     <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>
-
+<!--    <script src="papaparse.min.js"></script>
+    <script>
+    var artworks = Papa.parse("data/artworks.csv");
+    console.log(artworks);
+    </script> -->
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
 <![endif]-->
@@ -34,16 +38,20 @@ include 'readCsv.php'
         foreach($artworks as $artwork){
             if(!($artwork == "")&&($artwork[4] =="s")){
             print '<article class="art">';
-            print '<img src="images/'.$artwork[0].'" alt="'.$artwork[0].'">';
-            print '<div class="artInfo">';
+            print '<img src="images/'.$artwork[0].'" id ="'.$artwork[1].'" alt="'.$artwork[0].'">';
+            print '<div class="artInfo" id ="'.$artwork[0].'Info"><script>placeArtInfo("'.$artwork[1].'");</script>';
                 print '<p class="title">'.$artwork[1].'</p>';
                 print '<p class="medium">'.$artwork[2].'</p>';
                 print '<p class="size">'.$artwork[3].'</p>';
             print '</div>';
+           // print '<script>placeArtInfo('.$artwork[1].');</script>';
         print '</article>';
         } 
     }
         ?>
+    <div id=scrollArrow>
+        <p>V</p>
+    </div>
     </article>
     <footer>
         <p>Contact: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu</a></p>

@@ -196,6 +196,32 @@ article#bodyGrid div.artInfo{
     display: none;         
 }
 
+/* Scroll reminder animation */
+div#scrollArrow{
+    position: fixed;
+    bottom: 5vh;
+    left: 49vw;
+    width: 300px;
+    opacity: 0;
+    animation: scrolldown 1s 7s 7 alternate forwards;
+    
+}
+div#scrollArrow p{
+    display: block;
+    margin: auto;
+    font-size: 24pt;
+}
+@keyframes scrolldown {
+    0% { 
+ 
+        opacity: 1;
+     }
+    100%{ 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
 /* full view image */ 
 #fullView img{
     display: none;
@@ -227,6 +253,20 @@ article#bodyGrid div.artInfo{
     top: 2%;
     right: 2%;
     z-index: 210;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 27px;
+    cursor: pointer;
+    background-color: transparent;
+}
+#fullView #nextBtn{
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    z-index: 220;
     border: none;
     color: white;
     padding: 15px 25px;
@@ -331,4 +371,19 @@ html.is-animating .transition-fade{
 }
 html.is-animating .transition-swipe{
     transform: scaleX(1);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    nav{
+        display: none;
+    }
+    div.artInfo{
+        display: none;
+    }
+    h1{
+        font-size: 37vw;
+        width: 100vw;
+        top: -12vh;
+    }
 }
