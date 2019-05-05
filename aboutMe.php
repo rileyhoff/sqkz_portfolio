@@ -15,7 +15,6 @@
     <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>
-
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
 <![endif]-->
