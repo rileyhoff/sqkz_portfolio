@@ -213,7 +213,7 @@ div#scrollArrow p{
 }
 @keyframes scrolldown {
     0% { 
-        opacity: 1;git 
+        opacity: 1;
      }
     100% { 
         opacity: 0;

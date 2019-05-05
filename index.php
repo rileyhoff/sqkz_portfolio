@@ -16,11 +16,6 @@ include 'readCsv.php'
     <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>
-<!--    <script src="papaparse.min.js"></script>
-    <script>
-    var artworks = Papa.parse("data/artworks.csv");
-    console.log(artworks);
-    </script> -->
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
 <![endif]-->
