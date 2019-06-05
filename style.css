@@ -124,6 +124,14 @@ div#lowerNav img#insta{
     right: 5.5vw;
 }
 
+div.mobileIcon {
+    display: none;
+}
+
+div.navMblOverlay {
+    display: none;
+}
+
 /* Art article */
 
 article#bodyVertical{
@@ -373,17 +381,96 @@ html.is-animating .transition-swipe{
     transform: scaleX(1);
 }
 
+/* --------------- ---for mobile phones ------------------*/
+
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    nav{
+    /* navigation */
+    nav ol {
         display: none;
     }
-    div.artInfo{
+    nav div#lowerNav{
         display: none;
     }
-    h1{
-        font-size: 37vw;
-        width: 100vw;
-        top: -12vh;
+    nav div.mobileIcon {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        top: 3px;
+        right: 5vw;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #954242;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+  
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+  
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }
+
+    div.artInfo {
+        display: none;
+    }
+    h1 {
+        top: -15px;
+        display: inline-block;
+        padding-left: 5vw;
+        font-size: 40pt;
+        position: fixed;
+    }
+
+    div.navMblOverlay {
+        width: 110vw;
+        height: 110vh;
+        background-color: #E1E1E1;
+        opacity: .8;
+        position: absolute;
+        top:-10vh;
+        left: -100vw;
+        z-index: -100;
+        transform: scaleY(0);
+        -webkit-transform:  scaleY(0);
+        transform-origin: top;
+        transition: 2s;
+
+    }
+    div.navMblOverlay.show {
+        display: block;
+        transition: 2s;
+        transform: scaleY(1);
+        -webkit-transform:  scaleY(1);
+    }
+    ol.upperNav.show{
+        display: block;
+        position: fixed;
+        top:80px;
+        left: 0;
+        width: 100%;
+    }
+    ol.upperNav.show li{
+        padding: 5vh 0 5vh 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 5.5vw;
+    }
+    
+    /* index.php */
+    div#scrollArrow{
+        display: none;
     }
 }

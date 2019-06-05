@@ -35,3 +35,10 @@ function fullViewExit(){
     document.getElementById("fullViewImg").style.display = 'none';
     document.getElementById("nextBtn").style.display = 'none';
 }
+
+//mobile menu animation
+function mobileIcon(x) {
+    x.classList.toggle("change");
+    document.getElementById("navMblOverlay").classList.toggle("show");
+    document.getElementById("upperNav").classList.toggle("show");
+}

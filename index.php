@@ -34,12 +34,11 @@ include 'readCsv.php'
             if(!($artwork == "")&&($artwork[4] =="s")){
             print '<article class="art">';
             print '<img src="images/'.$artwork[0].'" id ="'.$artwork[1].'" alt="'.$artwork[0].'"onclick="fullViewDir(this)">';
-            print '<div class="artInfo" id ="'.$artwork[0].'Info"><script>placeArtInfo("'.$artwork[1].'");</script>';
+            print '<div class="artInfo" id ="'.$artwork[0].'Info">';
                 print '<p class="title">'.$artwork[1].'</p>';
                 print '<p class="medium">'.$artwork[2].'</p>';
                 print '<p class="size">'.$artwork[3].'</p>';
             print '</div>';
-           // print '<script>placeArtInfo('.$artwork[1].');</script>';
         print '</article>';
         } 
     }
@@ -75,13 +74,15 @@ include 'readCsv.php'
         });
 
         //onscroll change sqkz header to vertical text
-        window.onscroll = function () {
-            if(page == "index.php"){
-                verticalTitle();
-            }else{
-                //dont change title
-            }
-        }; 
+        //if(window.screen.width > 768){ //not for mobile
+            window.onscroll = function () {
+                if(page == "index.php" && window.screen.width > 768){
+                    verticalTitle();
+                }else{
+                    //dont change title
+                }
+            }; 
+        //}
     </script>
 </body>
 </html>
