@@ -340,6 +340,7 @@ body.altPage h2{
     font-family: 'Rozha One', serif;
     font-size: 10vw;
     margin: 10vh 0 0 0;
+    z-index: -10;
 }
 body.altPage p{
     font-family: 'Raleway', sans-serif;
@@ -391,12 +392,30 @@ html.is-animating .transition-swipe{
     nav div#lowerNav{
         display: none;
     }
+    div#navMblBottom {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        background-color: #E1E1E1;
+        opacity: .8;
+        z-index: 300;
+    }
+    body.altPage div#navMblBottom{
+        background-color: #843434;
+    }
+    div.navMblBottom.show {
+        display: none;
+    }
     nav div.mobileIcon {
         display: inline-block;
         cursor: pointer;
         position: fixed;
-        top: 3px;
-        right: 5vw;
+        bottom: 5px;
+        left: 50%;
+        margin-left: -17.5px;
+        z-index: 600;
     }
     .bar1, .bar2, .bar3 {
         width: 35px;
@@ -405,6 +424,9 @@ html.is-animating .transition-swipe{
         margin: 6px 0;
         transition: 0.4s;
       }
+    body.altPage .bar1, body.altPage .bar2, body.altPage .bar3{
+          background-color: #E1E1E1;
+    }
       /* Rotate first bar */
     .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -426,11 +448,24 @@ html.is-animating .transition-swipe{
         display: none;
     }
     h1 {
-        top: -15px;
-        display: inline-block;
-        padding-left: 5vw;
-        font-size: 40pt;
         position: fixed;
+        top: -15px;
+        left: 50%;
+        margin-left: -67px;
+        display: inline-block;
+        font-size: 40pt;
+        z-index: 150;
+    }
+    h1.verticalTitle{
+        position: fixed;
+        top: -15px;
+        left: 50%;
+        margin-left: -67px;
+        display: inline-block;
+        font-size: 40pt;
+        z-index: 150;
+        writing-mode: horizontal-tb;
+        color: #843434;
     }
 
     div.navMblOverlay {
@@ -441,7 +476,6 @@ html.is-animating .transition-swipe{
         position: absolute;
         top:-10vh;
         left: -100vw;
-        z-index: -100;
         transform: scaleY(0);
         -webkit-transform:  scaleY(0);
         transform-origin: top;
@@ -454,12 +488,16 @@ html.is-animating .transition-swipe{
         transform: scaleY(1);
         -webkit-transform:  scaleY(1);
     }
+     body.altPage div.navMblOverlay {
+        background-color: #843434;
+    }
     ol.upperNav.show{
         display: block;
         position: fixed;
         top:80px;
         left: 0;
         width: 100%;
+        z-index: 10;
     }
     ol.upperNav.show li{
         padding: 5vh 0 5vh 0;
@@ -470,7 +508,49 @@ html.is-animating .transition-swipe{
     }
     
     /* index.php */
+    body{
+        margin: 0;
+    }
+    article#bodyVertical{
+        margin: 0;
+    }
+    
+    article.art{
+        width: 100%;
+        margin: 0;
+    }
     div#scrollArrow{
         display: none;
+    }
+    footer{
+        padding-bottom: 40px;
+    }
+    /* grid view */
+    article#bodyGrid {
+        margin: 70px 0  0  2vw;
+        padding: 0 0 52px 0;
+    }
+    article#bodyGrid article.art {
+        width: 32vw;
+        height: 32vw;
+        padding: .1%;
+        overflow: hidden;
+    }
+
+    /*alternative page*/
+    body.altPage h2{
+        font-size: 20vw;
+        margin: 0;
+        position: relative;
+        left: -2vw;
+    }
+    body.altPage p{
+        font-size: 4vw;
+        padding: 5vw;
+        margin: 0;
+    }
+    body.altPage h1#sqkzTitle.verticalTitle{
+        top: 45vh;
+        left: 70vw;
     }
 }

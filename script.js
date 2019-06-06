@@ -41,4 +41,5 @@ function mobileIcon(x) {
     x.classList.toggle("change");
     document.getElementById("navMblOverlay").classList.toggle("show");
     document.getElementById("upperNav").classList.toggle("show");
+    document.getElementById("navMblBottom").classList.toggle("show");
 }
