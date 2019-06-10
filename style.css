@@ -39,6 +39,10 @@ h1{
         color:#D1D1D1;
         z-index: -100;
     }
+    h1 a {
+        color: inherit;
+        text-decoration: inherit;
+    }
 
 @keyframes fadein {
 from { opacity: 0; }
@@ -554,3 +558,9 @@ html.is-animating .transition-swipe{
         left: 70vw;
     }
 }
+/* 
+TODO:
+make sqkz title link to index.php
+add instagram link to mobile nav
+
+*/

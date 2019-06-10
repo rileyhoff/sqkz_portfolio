@@ -23,7 +23,7 @@ include 'readCsv.php'
 
 <body>
     <main id="swup" class="transition-fade">
-    <h1 id="sqkzTitle" class="horizontalTitle">SQKZ</h1>
+    <h1 id="sqkzTitle" class="horizontalTitle"><a href="/sqkz/portfolio_develop/index.php">SQKZ</a></h1>
     <?php 
     include 'nav.php'
     ?>
