@@ -16,7 +16,7 @@ h1{
     left: 1vw;
     padding: 0;
     margin: 0;
-    color: #954242;
+    color: #843434;
     z-index: 100;
     width: 40vw;
     overflow: hidden;
@@ -73,7 +73,7 @@ nav{
     position: fixed;
     top: 50px;
     right: 30px;
-    border-right: 3px solid #954242;
+    border-right: 3px solid #843434;
     padding-right: 2vw; 
     -webkit-animation: fadein 1s 2s backwards; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s 2s backwards; /* Firefox < 16 */
@@ -100,15 +100,15 @@ nav ol li{
 
 nav ol li:hover{
     text-decoration: underline;
-    color: #954242;
+    color: #843434;
 }
 nav ol li:visited{
     font-weight: bold;
-    color: #954242;
+    color: #843434;
 }
 div#lowerNav div.vl{
     height: 10vh;
-    border-left: 3px solid #954242;
+    border-left: 3px solid #843434;
     position: fixed;
     bottom: 0;
     right: 5vw;
@@ -341,11 +341,11 @@ p#profileText {
 /* alternate page */
 
 body.altPage{
-    background-color: #954242;
+    background-color: #843434;
     color: #E1E1E1;
 }
 body.altPage h1{
-    color:#843434;
+    color:#691C1C;
 }
 body.altPage h1#sqkzTitle{  /*override horizontal if necescary*/
     writing-mode: vertical-lr;
@@ -381,7 +381,7 @@ body.altPage div#lowerNav div.vl{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #954242;
+    background: #843434;
     left: 0;
     top: 0;
     transform: scale(0);
@@ -420,7 +420,7 @@ html.is-animating .transition-swipe{
         z-index: 300;
     }
     body.altPage div#navMblBottom{
-        background-color: #843434;
+        background-color: #691C1C;
     }
     div.navMblBottom.show {
         display: none;
@@ -437,7 +437,7 @@ html.is-animating .transition-swipe{
     .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #954242;
+        background-color: #843434;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -506,7 +506,7 @@ html.is-animating .transition-swipe{
         -webkit-transform:  scaleY(1);
     }
      body.altPage div.navMblOverlay {
-        background-color: #843434;
+        background-color: #691C1C;
     }
     ol.upperNav.show{
         display: block;
@@ -589,3 +589,6 @@ html.is-animating .transition-swipe{
         float: none;
     }
 }
+/*
+TODO:
+add show info button to full screen view
