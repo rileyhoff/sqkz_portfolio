@@ -48,7 +48,6 @@ include 'readCsv.php'
         <img id="fullViewImg" src="">
         <div id="fullViewOverlay" onclick="fullViewExit()"></div>
         <button id="exitBtn" onclick="fullViewExit()">X</button>
-        <button id="nextBtn" onclick="getNextArtwork()">></button>
     </div>
 </main>
 <div class="transition-swipe overlay"></div>

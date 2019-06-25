@@ -14,7 +14,7 @@
     </ol>
     <div id="lowerNav">  
         <div class="vl"></div>
-        <a href="https://www.instagram.com/sqkz_/" target="_blank">
+        <a id="instaIcon" class="instaIcon" href="https://www.instagram.com/sqkz_/" target="_blank">
             <img src="images/instaIcon.png" alt="instagram" id="insta">
         </a> 
     </div>

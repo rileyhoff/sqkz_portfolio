@@ -322,6 +322,21 @@ body#drawing h1#sqkzTitle.horzontalTitle{  /*override horizontal if necescary*/
     margin: 0; 
     z-index: -100;
 }
+/* about me page */
+div#profileBody {
+    width: 100%;
+}
+img#profile {
+    max-width: 30vw;
+    margin-right: 5%;
+    float: left;
+}
+p#profileText {
+    width: 50vw;
+    padding-right: 2vw; 
+    margin: 0;
+    float: left;
+}
 
 /* alternate page */
 
@@ -348,7 +363,8 @@ body.altPage h2{
 }
 body.altPage p{
     font-family: 'Raleway', sans-serif;
-    font-size: 2vw;
+    font-size: 1.75vw;
+    line-height: 1.4;
 }
 body.altPage a{
     color:#E1E1E1;
@@ -390,10 +406,7 @@ html.is-animating .transition-swipe{
 
 @media only screen and (max-width: 768px) {
     /* navigation */
-    nav ol {
-        display: none;
-    }
-    nav div#lowerNav{
+    nav ol, div#lowerNav .vl, .instaIcon{
         display: none;
     }
     div#navMblBottom {
@@ -510,6 +523,13 @@ html.is-animating .transition-swipe{
         text-align: center;
         font-size: 5.5vw;
     }
+    a.instaIcon.show {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
     
     /* index.php */
     body{
@@ -557,10 +577,15 @@ html.is-animating .transition-swipe{
         top: 45vh;
         left: 70vw;
     }
+    /* about me */
+    img#profile{
+        margin: 2vh auto;
+        max-height: 50vh;
+        max-width: 50vw;
+        float: none;
+    }
+    p#profileText {
+        width: auto;
+        float: none;
+    }
 }
-/* 
-TODO:
-make sqkz title link to index.php
-add instagram link to mobile nav
-
-*/

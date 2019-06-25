@@ -28,14 +28,18 @@
     ?>
     <article id="body">
        <h2>About Me</h2>
-       <p>I am a 22 year old college student at the University of Vermont, Studying studio art and computer science.
-        I’ve been focusing on contemporary portraiture and how it evolves in the digital age. I mainly work in Charcoal
-         and Acrylics. The motivation behind the majority of my works revolve around how our generation is constantly 
-         scrolling through our social media feeds at images of others, my work is a sort of repurposing of these images 
-         into something new where I try to connect and relay my emotions though images.<br>
-        - SQKZ (Riley Hoff)<br><br>
+       <div id="profileBody">
+       <img src="images/profile_pic.jpg" id="profile">
+       <p id="profileText">I'm an artist and creative, who's passions lie in art making and technology. A recent graduate from       
+       the University of Vermont, with a dual major of studio art and computer science. I’ve been focusing on contemporary portraiture and 
+       how it evolves in the digital age. My works are often a repurposing of found digital images, in the process something new arises where I connect and 
+        relay my emotions throughout.
+        <br>
+        - SQKZ (Riley Hoff)
+        <br><br>
         Contact me: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu<a><br>
         insta : <a href="https://www.instagram.com/sqkz_/" target="_blank">@sqkz_</a></p>
+</div>
     </article>
 </main>
 <div class="transition-swipe overlay"></div>

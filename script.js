@@ -42,4 +42,5 @@ function mobileIcon(x) {
     document.getElementById("navMblOverlay").classList.toggle("show");
     document.getElementById("upperNav").classList.toggle("show");
     document.getElementById("navMblBottom").classList.toggle("show");
+    document.getElementById("instaIcon").classList.toggle("show");
 }
