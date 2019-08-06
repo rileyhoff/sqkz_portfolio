@@ -26,14 +26,12 @@ function fullViewDir(el){
     var imgFile = el.src.split("/").pop(); //get file name of image
     document.getElementById("fullViewImg").src = 'images/fullView/'+imgFile;
     document.getElementById("fullViewImg").style.display = 'block';
-    document.getElementById("nextBtn").style.display = 'block';
 }
 function fullViewExit(){
     document.getElementById("fullViewOverlay").style.display = 'none ';
     document.getElementById("exitBtn").style.display = 'none';
     document.getElementById("fullViewImg").src = '""';
     document.getElementById("fullViewImg").style.display = 'none';
-    document.getElementById("nextBtn").style.display = 'none';
 }
 
 //mobile menu animation

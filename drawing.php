@@ -12,7 +12,7 @@ include 'readCsv.php'
     <meta name="description" content="SQKZ (Riley Hoff) art portfolio - Drawing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>

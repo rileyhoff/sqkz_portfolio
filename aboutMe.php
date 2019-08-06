@@ -10,8 +10,8 @@
     <meta name="author" content="Riley Hoff">
     <meta name="description" content="SQKZ (Riley Hoff) art portfolio - About me">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Rozha+One" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/sqkzIcon.png">
     <script src="script.js"></script>
     <script src="swup/dist/swup.js"></script>
@@ -38,7 +38,10 @@
         - SQKZ (Riley Hoff)
         <br><br>
         Contact me: <a href="mailto:rhoff@uvm.edu">rhoff@uvm.edu<a><br>
-        insta : <a href="https://www.instagram.com/sqkz_/" target="_blank">@sqkz_</a></p>
+        insta : <a href="https://www.instagram.com/sqkz_/" target="_blank">@sqkz_</a>
+        <br><br>
+        Still want more? check out my <a href="/design/index.html" target="_blank">Design Portfolio.</a>
+        </p>
 </div>
     </article>
 </main>
